@@ -1,0 +1,98 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(209, 203, 203);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+}
+
+h1{
+    color: green;
+}
+
+li a {
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#mainDiv {
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    border: 2px solid rgb(190, 185, 185);
+}
+
+#divReportBug {
+    background-color: rgb(190, 185, 185);
+    color: white;
+    padding: 10px 30px;
+}
+
+#divDetailsBug {
+    padding: 10px 30px;
+}
+
+#divSendBug {
+    background-color: rgb(238, 237, 237);
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding: 10px 30px;
+}
+
+#divDetailsBug input, #divDetailsBug textarea, #divDetailsBug select {
+    margin-bottom: 8px;
+}
+
+input[type=text], textarea {
+    border-radius: 5px;
+    border: 2px solid rgb(190, 185, 185);
+    padding: 7px;
+    width: calc(100% - 15px);
+}
+
+input[type=file]{
+    border-radius: 5px;
+    border: 2px solid rgb(190, 185, 185);
+    width: calc(100% - 5px);
+}
+
+select {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    width: 100%;
+}
+
+button {
+    border-radius: 5px;
+    padding: 7px 13px;
+    color: white;
+    background-color: green;
+    border: none;
+}
+
+.radioBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.radioList {
+    width: 50%;
+}

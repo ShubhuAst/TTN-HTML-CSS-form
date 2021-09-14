@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "form.css">
+    <title>form</title>
+</head>
+
+<body>
+    <header>
+        <h1>TO THE NEW</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quick Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="mainDiv">
+        <div id="divReportBug"><h2>Bug Report</h2></div>
+        <div id="divDetailsBug">
+            <form>
+                
+                <label for="title">Title:*</label><br>
+                <input type="text" id="title" name="title" required><br>
+
+                <label for="description">Description:*</label><br>
+                <textarea id="description" name="description" rows="4" cols="30" required></textarea><br>
+
+                <label for="OS">Operating System:</label><br>
+                <select name="OS" id="OS">
+                    <option value="windows">Windows</option>
+                    <option value="macos">macOS</option>
+                    <option value="linux">Linux</option>
+                </select><br>
+
+                <label for="product">Product:*</label><br>
+                <select name="product" id="product" required>
+                    <option value="X">X</option>
+                    <option value="Y">Y</option>
+                    <option value="Z">Z</option>
+                </select><br>
+
+                <label for="version">Version:*</label><br>
+                <input type="text" id="version" name="version" style="width: 30%;" required><br>
+
+                <label for="license">License:</label><br>
+                <div class="radioBox">
+                    <label for="free" class="radioList"><input type="radio" id="free" name="free" value="free">Free</label>
+                    <label for="business" class="radioList"><input type="radio" id="business" name="business" value="business">Business</label>
+                </div><br>
+                
+                <label for="severity">Severity:</label><br>
+                <select name="severity" id="severity">
+                    <option value="critical">Critical</option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                </select><br>
+
+                <label for="myfile">Attachments:</label><br>
+                <input type="file" id="attachment" name="attachment">
+
+            </form>
+            
+
+        </div>
+        <div id="divSendBug"><button type="submit">Send</button></div>
+    </div>
+</body>
+
+</html>
